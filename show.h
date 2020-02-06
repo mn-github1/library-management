@@ -16,7 +16,7 @@ typedef struct  tagBITMAPFILEHEADER {
 } BITMAPFILEHEADER;
 
 typedef struct tagBITMAPINFOHEADER{
-	DOWRD biSize;
+	DWORD biSize;
 	LONG  biWidth;
 	LONG  biHeight;
 	WORD  biPlanes;
@@ -103,7 +103,7 @@ typedef struct {
 	int w;
 	int h;
 	int bits_per_pixel;
-}scree_info;
+}screen_info;
 
 void clr_src(col c);
 icon *create_icon(rect m_rect, tag_bmp *p, char *name, col f, col bk, int type);
