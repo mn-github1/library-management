@@ -1,5 +1,6 @@
 #ifndef __SHOW_H
 #define __SHOW_H
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -105,6 +106,9 @@ typedef struct {
 	int bits_per_pixel;
 }screen_info;
 
+tag_bmp *load_bmp(char *filename);
+void free_bmp(tag_bmp *p); 
+void show_bmp (int x0, int y0, tag_bmp *p);
 void clr_src(col c);
 icon *create_icon(rect m_rect, tag_bmp *p, char *name, col f, col bk, int type);
 void list_and_draw_dir(char *path, screen_info info, int x, int y);

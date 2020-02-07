@@ -101,7 +101,9 @@ void yuyv_to_rgb(struct buffer bb)
 
 	return ;
 }
-
+#ifndef OPJ_STATIC
+#define OPJ_STATIC
+#endif
 #include <setjmp.h>
 #include "jpeglib.h"
 
