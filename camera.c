@@ -107,7 +107,6 @@ void yuyv_to_rgb(struct buffer bb)
 #include <setjmp.h>
 #include "jpeglib.h"
 
-
 void decompress_jpeg(unsigned char *data, int size)
 {
 	if (0 == size) {

@@ -4,7 +4,9 @@
 
 int main(void)
 {
-	fb_init();
+	screen_info s_info;
+
+	fb_init(&s_info);
 	input_init();
 
 	tag_bmp *pbmp;

@@ -2,8 +2,8 @@
 #define __SHOW_H
 
 #include <stdio.h>
-#include <unistd.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include <math.h>
 #include <string.h>
 
@@ -36,7 +36,6 @@ typedef struct _tag_bmp {
 	void *data;
 }tag_bmp;
 
-tag_bmp *load_bmp(char *filename);
 
 #define PI 3.1415926
 
@@ -99,17 +98,37 @@ typedef struct tag_icon{
 
 #define FONT_HEIGHT 28
 #define FONT_WIDTH_PER_BYTE 8
-
 typedef struct {
 	int w;
 	int h;
 	int bits_per_pixel;
 }screen_info;
 
-tag_bmp *load_bmp(char *filename);
-void free_bmp(tag_bmp *p); 
-void show_bmp (int x0, int y0, tag_bmp *p);
-void clr_src(col c);
-icon *create_icon(rect m_rect, tag_bmp *p, char *name, col f, col bk, int type);
-void list_and_draw_dir(char *path, screen_info info, int x, int y);
+extern void show_point(int x, int y, col c);
+extern void fb_init(screen_info *info);
+extern void copy_screen(rect m_rect, int direct);
+extern void draw_h_line(int x0, int y0, int width, col c);
+extern void draw_s_line(int x0, int y0, int height, col c);
+extern void draw_line(int x0, int y0, int x1, int y1, col c);
+extern void draw_line_point(point s, point e, col c);
+extern void fill_rect(int x0, int y0, int width, int height, col c);
+extern void draw_rect(int x0, int y0, int width, int height, col c);
+extern void clr_src(col c);
+extern void draw_circle_n(point pt0, int r, int n, col c);
+extern void poly_line(point *pt, int n, col c);
+extern void draw_a_ascii(int x0, int y0, char ch, col f, col bk);
+extern void draw_a_ascii_by_zimo(int x0, int y0, unsigned char *zimo, col f, col bk);
+extern void draw_string(int x0, int y0, char *str, col f, col bk);
+extern void draw_a_chinese_by_zimo(int x0, int y0, unsigned char *zimo, col f, col bk);
+extern void draw_a_chinese(int x0, int y0, unsigned char code[2], col f, col bk);
+extern void draw_chinese(int x0, int y0, unsigned char *str, col f, col bk);
+extern void draw_text(int x0, int y0, unsigned char *str, col f, col bk);
+extern void draw_text_n(int x0, int y0, unsigned char *str, int n, col f, col bk);
+extern tag_bmp *load_bmp(char *filename);
+extern void show_bmp (int x0, int y0, tag_bmp *p);
+extern void show_bmp_reverse(int x0, int y0, tag_bmp *p);
+extern void free_bmp(tag_bmp *p);
+extern void show_cursor(int x0, int y0, tag_bmp *p);
+extern void draw_icon (icon *m_icon);
+extern icon *create_icon(rect m_rect, tag_bmp *p, char *name, col f, col bk, int type);
 #endif
