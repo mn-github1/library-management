@@ -1,0 +1,213 @@
+/*教室选择*/
+.jsxz {
+	width:250px;
+	height:40px;
+	float: left;
+	margin-top :200px;
+	margin-left: 250px;
+	font-size: 20px;
+}
+/**/
+.zwxz {
+	width:350px;
+	height:40px;
+	float: left;
+	margin-top :200px;
+	margin-left: 25%;
+	font-size: 20px;
+}
+/*座位起始位置设置*/
+.zw_start {
+	margin-top :10px;
+	margin-left: 150px;
+}
+/*座位按钮设置*/
+.zw{
+	width: 40px;
+	height: 40px;
+	text-align:center;
+	line-height:40px; 	
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+	border-radius: 5px;
+	border:  1px solid #999;
+	background: #4cd964;
+	padding-bottom: 40px;	
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+}
+/*过道座位设置*/
+.zw_p{
+	width: 40px;
+	height: 40px;
+	text-align:center;
+	line-height:40px; 	
+	float: left;
+	margin-left: 60px;
+	margin-top: 30px;
+	border-radius: 5px;
+	border:  1px solid #999;
+	background: #4cd964;
+	padding-bottom: 40px;	
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+}
+/*过道座位预约后设置*/
+.zw_p_y{
+	width: 40px;
+	height: 40px;
+	text-align:center;
+	line-height:40px; 	
+	float: left;
+	margin-left: 60px;
+	margin-top: 30px;
+	border-radius: 5px;
+	border:  1px solid #999;
+	background: #ff0000;
+	padding-bottom: 40px;	
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+}
+/*座位预约后设置*/
+.zw_y{
+	width: 40px;
+	height: 40px;
+	text-align:center;
+	line-height:40px; 	
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+	border-radius: 5px;
+	border:  1px solid #999;
+	background: #ff0000;
+	padding-bottom: 40px;	
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+}
+/*社科1插座1位置设置*/
+.sk1_1{
+	float:left;
+	margin-left: 400px;
+	margin-top: 30px;
+}
+/*社科1插座2位置设置*/
+.sk1_2{
+	float:left;
+	margin-left: 550px;
+	margin-top: 30px;
+}
+/*社科2插座1位置设置*/
+.sk2_1{
+	float:left;
+	margin-left: 400px;
+	margin-top: 30px;
+}
+/*社科2插座2位置设置*/
+.sk2_2{
+	float:left;
+	margin-left: 400px;
+	margin-top: 30px;
+}
+/*社科2插座3位置设置*/
+.sk2_3{
+	float:left;
+	margin-left: 150px;
+	margin-top: 30px;
+}
+/*插座样式设置*/
+.socket{
+	width: 40px;
+	height: 25px;
+	text-align:center;
+	line-height:30px; 	
+	float:left;
+	border-radius: 5px;
+	border:  1px solid #999;
+	background: #00eff4;
+	padding-bottom: 5px;
+	font-size: 18px;
+	color: #fff;
+}
+/*插座出问题之后样式设置*/
+.socket_bad{
+	width: 40px;
+	height: 25px;
+	text-align:center;
+	line-height:30px; 
+	float:left;	
+	border-radius: 5px;
+	border:  1px solid #999;
+	background: #ff0000;
+	padding-bottom: 5px;
+	font-size: 18px;
+	color: #fff;
+}
+/*二楼社科1教室按钮设置*/
+.two_sheke1{
+	width: 200px;
+	height: 45px;
+	text-align:center;
+	line-height:50px; 	
+	margin-left:200px;
+	margin-top: 100px;
+	float: left;
+	border-radius: 5px;
+	border:  1px solid #999;
+	background: #4cd964;
+	font-size: 18px;
+	color: #000000;
+	cursor: pointer;
+}
+/*二楼社科2教室按钮设置*/
+.two_sheke2{
+	width: 200px;
+	height: 45px;
+	text-align:center;
+	line-height:50px; 	
+	margin-right:200px;
+	margin-top: 100px;
+	float: right;
+	border-radius: 5px;
+	border:  1px solid #999;
+	background: #4cd964;
+	font-size: 18px;
+	color: #000000;
+	cursor: pointer;
+}
+/*二楼社科3教室按钮设置*/
+.two_sheke3{
+	width: 200px;
+	height: 45px;
+	text-align:center;
+	line-height:50px; 	
+	margin-left:200px;
+	margin-top: 100px;
+	float: left;
+	border-radius: 5px;
+	border:  1px solid #999;
+	background: #4cd964;
+	font-size: 18px;
+	color: #000000;
+	cursor: pointer;
+}
+/*二楼社科4教室按钮设置*/
+.two_sheke4{
+	width: 200px;
+	height: 45px;
+	text-align:center;
+	line-height:50px; 	
+	margin-right:200px;
+	margin-top: 100px;
+	float: right;
+	border-radius: 5px;
+	border:  1px solid #999;
+	background: #4cd964;
+	font-size: 18px;
+	color: #000000;
+	cursor: pointer;
+}
